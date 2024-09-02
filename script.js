@@ -1,7 +1,17 @@
 document.getElementById('fetchDataButton').addEventListener('click', function() {
-    const apiUrl = 'https://o9eaywu4ud.execute-api.sa-east-1.amazonaws.com/v1/test';
-    fetch(apiUrl, {
-        method: 'GET',
+    const apiUrl = 'https://38heo9rexf.execute-api.sa-east-1.amazonaws.com/v1/MP/dbwidgets';
+    const data = {
+        ids: "1",
+        tipo: "",
+        segmento: "",
+        categoria: "",
+        revision: "",
+        widget: "cuadro",
+        filtrowidget: "",
+        proyectoid: ""
+    }
+    fetch(apiUrl, data,{
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         }
@@ -22,9 +32,19 @@ document.getElementById('fetchDataButton').addEventListener('click', function() 
 });
 
 document.getElementById('fetchDataButton2').addEventListener('click', function() {
-    const apiUrl = 'https://lv33044550.execute-api.sa-east-1.amazonaws.com/v1/test';
-    fetch(apiUrl, {
-        method: 'GET',
+    const apiUrl = 'https://38heo9rexf.execute-api.sa-east-1.amazonaws.com/v1/MP/dbwidgets';
+    const data = {
+        ids: "1",
+        tipo: "",
+        segmento: "",
+        categoria: "",
+        revision: "",
+        widget: "proyecto",
+        filtrowidget: "",
+        proyectoid: ""
+    }
+    fetch(apiUrl, data,{
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         }
